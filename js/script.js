@@ -114,9 +114,9 @@ function printQuote () {
  * `bodyColor` function to randomly generate CSS RGB colors to style the <body> elements background color
 ***/
    function bodyColor () {
-        const r = Math.floor(Math.random() * 256) + 1;
-        const g = Math.floor(Math.random() * 256) + 1;
-        const b = Math.floor(Math.random() * 256) + 1;
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
         const randomColor = "rgb(" + r + "," + g + "," + b + ")";
         
         document.body.style.background = randomColor;
